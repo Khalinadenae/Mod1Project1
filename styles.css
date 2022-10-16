@@ -1,0 +1,188 @@
+
+/* set containers to flex*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: center;
+}
+
+
+
+.content{
+  display : flex;
+  padding: 40px 10px 0 10px;
+}
+.article{
+    display: flex;
+}
+.footer{
+  
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+/* typography */ 
+h3{
+    font-size: 1.3em;
+    text-align: start;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    
+}
+/* Navigation */
+
+li{
+    list-style: none;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    padding-right: 10px;
+    color: black;
+}
+
+.logo{
+   margin-right: auto;
+   margin-left: 30px;
+}
+nav{
+    background-color: rgb(41, 122, 243);
+    width: 100%;
+    padding: 20px 0 ;
+}
+
+/* hero section */
+.hero-text{
+    width: 30%;
+    letter-spacing: 2px;
+    text-align: center;
+     margin-left: 300px;
+ 
+}
+.hero-img{
+width: 50%;
+
+}
+
+
+/* article */
+
+.article1{
+    width: 70%;
+  padding-left: 50px;
+    text-align: start;
+    background-color: rgba(77, 77, 150, 0.575);
+    padding-bottom: 100px;
+}
+
+.aside1{
+    width: 30%;
+  padding-left: 50px;
+    text-align: start;
+    background-color: rgba(77, 77, 150, 0.575);
+       border: 1.3px solid rgb(92, 126, 212);
+}
+  /* footer */ 
+  .reason{
+    width: 25%;
+  }
+
+  .card-img{
+    width: 150px;
+    height: 90px;
+  }
+  .card-text{
+    width: 90%;
+  }
+  .card-title{
+    margin-top: 10px;
+  }
+  .footer-container{
+    padding: 50px;
+    background-color: rgb(114, 128, 141);
+    border-top: 1.3px solid rgb(46, 97, 223);
+  }
+  button{
+    margin: 10px 0 ;
+    background-color: rgba(66, 66, 159, 0.119);
+    border: transparent;
+    padding: 10px;
+  }
+
+
+  /* media query */
+
+  @media  only screen and (max-width: 600px) {
+  
+    li{
+   padding: 2px;
+   font-size: 6px;
+    }
+    .logo{
+      font-size: 7px;
+    }
+
+    .hero-section{
+        flex-direction: column;
+    }
+    .hero-text{
+        margin: 10px;
+        padding: 30px;
+        width: 100%;
+        border: none;
+    }
+    .hero-img{
+    display: none;
+    }
+    .article{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+   
+    .article1{
+        width: 100%;
+  padding-left: 0px;
+  text-align: center;
+  padding-bottom: 30px;
+    }
+
+.aside1{
+        width: 100%;
+  padding-left: 0px;
+  text-align: center;
+  border: transparent;
+  padding-bottom: 40px;
+}
+h3{
+  padding-left: 10px;
+}
+   .footer{
+flex-direction: column;
+
+   }
+   .card-text{
+    width: 100%;
+   }
+   .reason{
+    width: 100%;
+margin-left: auto;
+margin-right: auto;
+   }
+
+
+  }
